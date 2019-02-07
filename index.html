@@ -63,6 +63,8 @@
                     document.getElementById("radioRO").checked = true; // select user language from cookie
                     $("#languageSelectorEN").css("opacity", 0.5); // change image opacity
                     $("#languageSelectorRO").css("opacity", 1); // change image opacity
+                } else{
+                    $("#languageForm").css("margin-top","-24px"); 
                 }
                 $("#languageDisplay").text(`Loaded language: ${myCookies["userLanguage"]}`);
             }
