@@ -1,0 +1,45 @@
+ #languageSelectorEN {
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    text-align: center;
+    background-image:url('en_resize.png');
+    background-position: center;
+    line-height: 44px;
+    opacity: 0.5;
+    transition: opacity .6s ease-out;
+  }
+
+  #languageSelectorRO {
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    text-align: center;
+    background-image:url('ro_resize.png');
+    background-position: center;
+    line-height: 44px;
+    opacity: 0.5;
+    transition: opacity .6s ease-out;
+  }
+
+#languageForm{
+    margin-top: -29px;
+    margin-bottom: -12px;
+  }
+
+  #languageDisplay{
+    color: lightgray;
+    margin-top: 5px;
+  }
+
+  [type=radio] { 
+    opacity: 0;
+  }
