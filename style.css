@@ -1,7 +1,6 @@
  #languageSelectorEN {
     width: 40px;
     height: 40px;
-    margin: -1px 4px 0 0;
     cursor: pointer;
     border-radius: 50%;
     border: 2px solid #FFFFFF;
@@ -17,7 +16,6 @@
   #languageSelectorRO {
     width: 40px;
     height: 40px;
-    margin: -1px 4px 0 0;
     cursor: pointer;
     border-radius: 50%;
     border: 2px solid #FFFFFF;
@@ -31,15 +29,15 @@
   }
 
 #languageForm{
-    /* margin-top: -29px; */
-    margin-bottom: -12px;
+    margin-top: 5px;
+    margin-bottom: -18px;
   }
 
   #languageDisplay{
     color: lightgray;
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   [type=radio] { 
-    opacity: 0;
+     opacity: 0;  /* hide radio check*/
   }

@@ -15,20 +15,23 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <p id="languageDisplay"> </p>
-            <div class="text-right">
-                <form id="languageForm">
-                    <label id="languageSelectorEN">
-                        <input type="radio" id='radioEN' name="languageRadio" value="EN" />
-                    </label>
-                    <label id="languageSelectorRO">
-                        <input type="radio" id='radioRO' name="languageRadio" value="RO" />
-                    </label>
-                </form>
+        <form id="languageForm">
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <p id="languageDisplay"> </p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="text-right">
+                        <label id="languageSelectorEN">
+                            <input type="radio" id='radioEN' name="languageRadio" value="EN" />
+                        </label>
+                        <label id="languageSelectorRO">
+                            <input type="radio" id='radioRO' name="languageRadio" value="RO" />
+                        </label>
+                    </div>
+                </div>
             </div>
-
-        </div>
+        </form>
 
         <div class="exercise">
             <hr>
@@ -54,7 +57,7 @@
                 myCookies[cookie[0].trim()] = cookie[1]; // build key & value pairs for myCookies object
             }
             if (myCookies["userLanguage"]) { // if userLanguage cookie exists  
-                console.log("User language: " + myCookies["userLanguage"]); 
+                console.log("User language: " + myCookies["userLanguage"]);
                 if (myCookies["userLanguage"] == "EN") {
                     document.getElementById("radioEN").checked = true; // select user language from cookie
                     $("#languageSelectorEN").css("opacity", 1); // change image opacity
@@ -63,12 +66,9 @@
                     document.getElementById("radioRO").checked = true; // select user language from cookie
                     $("#languageSelectorEN").css("opacity", 0.5); // change image opacity
                     $("#languageSelectorRO").css("opacity", 1); // change image opacity
-                } 
-                $("#languageDisplay").text(`Loaded language: ${myCookies["userLanguage"]}`);
-                $("#languageForm").css("margin-top", "-29px"); 
-            } else {
-                    $("#languageForm").css("margin-top", "-4px"); 
                 }
+                $("#languageDisplay").text(`Loaded language: ${myCookies["userLanguage"]}`);
+            }
         }
 
         loadCookies();
@@ -113,7 +113,6 @@
             console.log("Checked language: " + checkedLanguage);
             saveCookies();
             $("#languageDisplay").text(`Checked language: ${checkedLanguage}`);
-            $("#languageForm").css("margin-top", "-29px"); 
         });
 
     });
