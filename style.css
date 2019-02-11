@@ -6,7 +6,7 @@
     border: 2px solid #FFFFFF;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
     text-align: center;
-    background-image:url('en_resize.png');
+    background-image:url('/img/en_resize.png');
     background-position: center;
     line-height: 44px;
     opacity: 0.5;
@@ -21,7 +21,7 @@
     border: 2px solid #FFFFFF;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
     text-align: center;
-    background-image:url('ro_resize.png');
+    background-image:url('/img/ro_resize.png');
     background-position: center;
     line-height: 44px;
     opacity: 0.5;
